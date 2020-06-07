@@ -1,5 +1,5 @@
 class InfoController < ApplicationController
-  require "RubyGemsOrg"
+  require "rubygemsorg"
 
   def infogem
     if params[:search_gem].to_s.present?
