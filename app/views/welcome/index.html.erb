@@ -1,0 +1,14 @@
+<%= form_tag("searchgem", method: "post") do %>
+  <%= label_tag(:search_gem, "Search for gem:") %>
+  <%= text_field_tag(:search_gem) %>
+  <%= submit_tag("Search gem") %>
+<% end %>
+<%= form_tag("searchauthor", method: "post") do %>
+  <%= label_tag(:search_author, "Search all gems of the author:") %>
+  <%= text_field_tag(:search_author) %>
+  <%= submit_tag("Search author") %>
+<% end %>
+<%= form_tag("searchlatest", method: "post") do %>
+  <%= label_tag(:search_author, "Search all of the latest gems") %>
+  <%= submit_tag("Search Latest") %>
+<% end %>
